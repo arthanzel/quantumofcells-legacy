@@ -1,0 +1,38 @@
+{
+  "name": "quantumofcells",
+  "private": "true",
+  "version": "1.0.0",
+  "description": "Differential equation solver and plotter in JS",
+  "main": "index.html",
+  "devDependencies": {
+    "chai": "^2.3.0",
+    "fs-extra": "^0.18.2",
+    "gulp": "^3.8.11",
+    "gulp-autoprefixer": "^2.2.0",
+    "gulp-concat": "^2.5.2",
+    "gulp-stylus": "^2.0.1",
+    "karma": "^0.12.31",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^0.1.8",
+    "karma-mocha": "^0.1.10",
+    "mocha": "^2.2.4"
+  },
+  "scripts": {
+    "test": "node_modules/karma/bin/karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arthanzel/quantumofcells.git"
+  },
+  "keywords": [
+    "math",
+    "differential",
+    "equations"
+  ],
+  "author": "Martin Hanzel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arthanzel/quantumofcells/issues"
+  },
+  "homepage": "https://github.com/arthanzel/quantumofcells"
+}

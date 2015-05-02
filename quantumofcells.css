@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+.hide { display: none; }
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background: #f8f8f8;
+    font: 300 14px "Open Sans", sans-serif;
+    margin: 0px;
+    position: relative;
+}
+
+h1 {
+    font-size: 20px;
+    margin: 7px;
+}
+
+h2 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.toolbox {
+    background: rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid #aaa;
+    position: relative;
+    text-align: center;
+    z-index: 6;
+}
+
+.toolbox h1 {
+    margin-top: 0px;
+}
+
+.header {
+    background: #222;
+    color: white;
+    font-size: 14px;
+    height: 36px;
+    line-height: 36px;
+    position: relative;
+    text-align: center;
+    z-index: 5;
+}
+
+.header i {
+    cursor: pointer;
+    font-size: 22px;
+    padding: 7px 15px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.header i:hover, .header i.active {
+    background: #f8f8f8;
+    color: #222;
+}
+
+input, textarea {
+    resize: vertical;
+    width: 100%;
+}
+
+.wrapper {
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+qchart {
+    display: block;
+    height: 100%;
+    left: 0px;
+    padding-top: 36px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 0;
+}
