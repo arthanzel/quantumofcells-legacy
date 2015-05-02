@@ -30,12 +30,12 @@
                 <h2>Equations</h2>
                 <div class="eqnRow" ng-repeat="eqn in equations">
                     <div class="symbol">
-                        <input type="text" maxlength="2" ng-model="eqn.variable" />
+                        <input type="text" size="3" maxlength="2" ng-model="eqn.variable" />
                     </div>
                     <div class="value">
                         <input type="text" ng-model="eqn.expression" />
                     </div>
-                    <i ng-click="deleteEquation($index)" class="fa fa-trash-o"></i>
+                    <i ng-click="deleteEquation($index)" class="delete fa fa-trash-o"></i>
                 </div>
             </div>
             <p>
@@ -46,12 +46,12 @@
 
                 <div class="eqnRow" ng-repeat="param in parameters">
                     <div class="symbol">
-                        <input type="text" maxlength="2" ng-model="param.symbol" />
+                        <input type="text" size="3" maxlength="2" ng-model="param.symbol" />
                     </div>
                     <div class="value">
                         <input type="text" ng-model="param.value" />
                     </div>
-                    <i ng-click="deleteParameter($index)" class="fa fa-trash-o"></i>
+                    <i ng-click="deleteParameter($index)" class="delete fa fa-trash-o"></i>
                 </div>
            </div>
            <p>
@@ -60,15 +60,20 @@
            <div>
                 <h2>Simulate</h2>
 
-                <div class="eqnRowFlex">
-                    <div class="f1">Time</div>
-                    <div class="f2">
-                        <input type="text" ng-model="param.value" />
+                <div class="eqnRow smaller">
+                    <div class="label">Time</div>
+                    <div class="value">
+                        <input type="text" ng-model="time" />
                     </div>
                 </div>
-
-                <button ng-click="simulate()">Simulate</button>
+                <div class="eqnRow smaller">
+                    <div class="label">Resolution</div>
+                    <div class="value">
+                        <input type="text" ng-model="time" />
+                    </div>
+                </div>
            </div>
+           <button ng-click="simulate()">Simulate</button>
        </div>
 
         <qchart data="data" options="options"></qchart>

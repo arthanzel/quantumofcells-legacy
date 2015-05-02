@@ -18,58 +18,66 @@
 }
 .toolbox .eqnRow {
   border-top: 1px solid #ddd;
-  position: relative;
-}
-.toolbox .eqnRow:last-child {
-  border-bottom: 1px solid #ddd;
-}
-.toolbox .symbol {
-  height: 36px;
-  position: relative;
-  width: 36px;
-}
-.toolbox .symbol input {
-  border-right: 1px solid #ddd;
-  font-size: 20px;
-  padding: 0px;
-  text-align: center;
-}
-.toolbox .value {
-  height: 36px;
-  left: 36px;
-  position: absolute;
-  right: 0px;
-  top: 0px;
-}
-.toolbox .eqnRowFlex {
+  box-sizing: content-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   height: 36px;
+  position: relative;
 }
-.toolbox .eqnRowFlex .f1 {
+.toolbox .eqnRow:last-child {
+  border-bottom: 1px solid #ddd;
+}
+.toolbox .eqnRow > div {
+  height: 100%;
+}
+.toolbox .eqnRow.smaller {
+  height: 28px;
+}
+.toolbox .eqnRow .symbol {
+  border-right: 1px solid #ddd;
   -webkit-box-flex: 0;
   -webkit-flex: 0 1 auto;
       -ms-flex: 0 1 auto;
           flex: 0 1 auto;
-  line-height: 36px;
-  padding: 0px 3px;
 }
-.toolbox .eqnRowFlex .f2 {
+.toolbox .eqnRow .symbol,
+.toolbox .eqnRow .symbol input {
+  background: #fee;
+}
+.toolbox .eqnRow .symbol input {
+  font-size: 20px;
+  padding: 0px;
+  text-align: center;
+}
+.toolbox .eqnRow .label {
+  border-right: 1px solid #ddd;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 auto;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  font-size: 16px;
+  line-height: 28px;
+  padding: 0px 7px;
+}
+.toolbox .eqnRow .value {
   -webkit-box-flex: 1;
   -webkit-flex: 1 1 auto;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  height: 100%;
 }
-.toolbox i {
-  bottom: 2px;
+.toolbox .eqnRow .value,
+.toolbox .eqnRow .value input {
+  background: #efe;
+}
+.toolbox .eqnRow .delete {
+  bottom: 4px;
   color: #fbb;
   cursor: pointer;
   font-size: 20px;
   position: absolute;
-  right: 2px;
+  right: 8px;
 }
 .toolbox input {
   border: 0;

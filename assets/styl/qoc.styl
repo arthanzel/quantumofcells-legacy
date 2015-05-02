@@ -19,57 +19,56 @@
     
     .eqnRow {
         border-top: 1px solid #ddd;
+        box-sizing: content-box;
+        display: flex;
+        height: 36px;
         position: relative;
 
         &:last-child {
             border-bottom: 1px solid #ddd;
         }
-    }
-    
-    .symbol {
-        height: 36px;
-        position: relative;
-        width: 36px;
         
-        input {
-            border-right: 1px solid #ddd;
-            font-size: 20px;
-            padding: 0px;
-            text-align: center;
-        }
-    }
-    
-    .value {
-        height: 36px;
-        left: 36px;
-        position: absolute;
-        right: 0px;
-        top: 0px;
-    }
-    
-    .eqnRowFlex {
-        display: flex;
-        height: 36px;
-        
-        .f1 {
-            flex: 0 1 auto;
-            line-height: 36px;
-            padding: 0px 3px;
-        }
-        
-        .f2 {
-            flex: 1 1 auto;
+        & > div {
             height: 100%;
         }
-    }
-    
-    i {
-        bottom: 2px;
-        color: #fbb;
-        cursor: pointer;
-        font-size: 20px;
-        position: absolute;
-        right: 2px;
+        
+        &.smaller {
+            height: 28px;
+        }
+        
+        .symbol {
+            &, input {background: #fee};
+            border-right: 1px solid #ddd;
+            flex: 0 1 auto;
+            
+            input {
+                font-size: 20px;
+                padding: 0px;
+                text-align: center;
+            }
+        }
+        
+        .label {
+            border-right: 1px solid #ddd;
+            flex: 0 1 auto;
+            font-size: 16px;
+            line-height: 28px;
+            padding: 0px 7px;
+        }
+        
+        .value {
+            &, input {background: #efe};
+            flex: 1 1 auto;
+        }
+        
+        .delete {
+            bottom: 4px;
+            color: #fbb;
+            cursor: pointer;
+            font-size: 20px;
+            position: absolute;
+            right: 8px;
+        }
     }
     
     input {
