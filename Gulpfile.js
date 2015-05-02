@@ -1,4 +1,4 @@
-xvar gulp = require("gulp");
+var gulp = require("gulp");
 
 // ============================
 // ====== Asset Pipeline ======
