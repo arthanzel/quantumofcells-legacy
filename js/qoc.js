@@ -49,7 +49,7 @@
             { symbol: "b", value: 0.063  }, // Recovery rate
             { symbol: "c", value: 0      }  // Loss of immunity rate
         ];
-        $scope.time = 10;
+        $scope.time = 200;
         $scope.resolution = 250;
         $scope.addEquation = function() {
             $scope.equations.push({ variable: "", expression: "" });
@@ -72,6 +72,7 @@
                 $scope.resolution);
             console.log(result);
             $scope.data = QOCTools.dataToHighCharts(result, 500);
+            $(".toolbox").fadeOut(500);
         };
     });
 
