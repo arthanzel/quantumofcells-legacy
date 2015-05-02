@@ -79,8 +79,8 @@
                     <h2>Simulate</h2>
 
                     <div class="form-group">
-                        <input type="number" class="form-control" id="time" placeholder="Time">
-                        <input type="number" class="form-control" id="time" placeholder="Time">
+                        <input type="number" ng-model="time">
+                        <input type="number" ng-model="resolution">
                     </div>
 
                     <button ng-click="simulate()">Simulate</button>
@@ -88,12 +88,6 @@
            </div>
        </div>
 
-        <div class="panelContainerx" style="position:fixed;z-index:1000;top:0px;">
-            <button ng-click="changeToNewton()">Newton's Law of Cooling</button>
-            <button ng-click="changeToTrig()">Trigonometry</button>
-            <button ng-click="changeToLogistic()">Logistic Equation</button>
-            <button ng-click="changeToMultiple()">Multiple Equations</button>
-        </div>
         <qchart data="data" options="options"></qchart>
     </div>
 
