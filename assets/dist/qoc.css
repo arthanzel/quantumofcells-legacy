@@ -42,10 +42,6 @@
       -ms-flex: 0 1 auto;
           flex: 0 1 auto;
 }
-.toolbox .eqnRow .symbol,
-.toolbox .eqnRow .symbol input {
-  background: #fee;
-}
 .toolbox .eqnRow .symbol input {
   font-size: 20px;
   padding: 0px;
@@ -66,10 +62,6 @@
   -webkit-flex: 1 1 auto;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-}
-.toolbox .eqnRow .value,
-.toolbox .eqnRow .value input {
-  background: #efe;
 }
 .toolbox .eqnRow .delete {
   bottom: 4px;
