@@ -4,9 +4,12 @@
 
 .toolbox {
     background: rgba(255, 255, 255, 0.9);
-    border-right: 3px double #ccc;
-    position: relative;
-    width: 300px;
+    border-left: 3px double #ccc;
+    bottom: 0px;
+    position: absolute;
+    right: 0px;
+    width: 400px;
+    top: 36px;
     z-index: 10;
     
     h2 {
@@ -44,6 +47,22 @@
         top: 0px;
     }
     
+    .eqnRowFlex {
+        display: flex;
+        height: 36px;
+        
+        .f1 {
+            flex: 0 1 auto;
+            line-height: 36px;
+            padding: 0px 3px;
+        }
+        
+        .f2 {
+            flex: 1 1 auto;
+            height: 100%;
+        }
+    }
+    
     i {
         bottom: 2px;
         color: #fbb;
@@ -56,6 +75,7 @@
     input {
         border: 0;
         box-sizing: border-box;
+        font: 300 14px "Open Sans";
         height: 100%;
         padding: 0px 4px;
         width: 100%;

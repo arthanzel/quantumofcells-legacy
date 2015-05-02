@@ -4,9 +4,12 @@
 }
 .toolbox {
   background: rgba(255,255,255,0.9);
-  border-right: 3px double #ccc;
-  position: relative;
-  width: 300px;
+  border-left: 3px double #ccc;
+  bottom: 0px;
+  position: absolute;
+  right: 0px;
+  width: 400px;
+  top: 36px;
   z-index: 10;
 }
 .toolbox h2 {
@@ -38,6 +41,28 @@
   right: 0px;
   top: 0px;
 }
+.toolbox .eqnRowFlex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 36px;
+}
+.toolbox .eqnRowFlex .f1 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 auto;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  line-height: 36px;
+  padding: 0px 3px;
+}
+.toolbox .eqnRowFlex .f2 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  height: 100%;
+}
 .toolbox i {
   bottom: 2px;
   color: #fbb;
@@ -49,6 +74,7 @@
 .toolbox input {
   border: 0;
   box-sizing: border-box;
+  font: 300 14px "Open Sans";
   height: 100%;
   padding: 0px 4px;
   width: 100%;

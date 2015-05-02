@@ -1,3 +1,5 @@
+// TODO: Allow expressions in param values.
+
 describe("The QOC Solver", function() {
     beforeEach(module("qoc-solver"));
 
