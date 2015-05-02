@@ -6,11 +6,9 @@
 
 html, body {
     height: 100%;
-    overflow: hidden;
 }
 
 body {
-    background: #f8f8f8;
     font: 300 14px "Open Sans", sans-serif;
     margin: 0px;
     position: relative;
@@ -24,18 +22,6 @@ h1 {
 h2 {
     font-size: 20px;
     text-align: center;
-}
-
-.toolbox {
-    background: rgba(255, 255, 255, 0.8);
-    border-bottom: 1px solid #aaa;
-    position: relative;
-    text-align: center;
-    z-index: 6;
-}
-
-.toolbox h1 {
-    margin-top: 0px;
 }
 
 .header {

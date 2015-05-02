@@ -2,3 +2,59 @@
   background: -webkit-linear-gradient(bottom, #181818, #333);
   background: linear-gradient(to top, #181818, #333);
 }
+.toolbox {
+  background: rgba(255,255,255,0.9);
+  border-right: 3px double #ccc;
+  position: relative;
+  width: 300px;
+  z-index: 10;
+}
+.toolbox h2 {
+  margin: 0;
+  padding: 7px 0px;
+}
+.toolbox .eqnRow {
+  border-top: 1px solid #ddd;
+  position: relative;
+}
+.toolbox .eqnRow:last-child {
+  border-bottom: 1px solid #ddd;
+}
+.toolbox .symbol {
+  height: 36px;
+  position: relative;
+  width: 36px;
+}
+.toolbox .symbol input {
+  border-right: 1px solid #ddd;
+  font-size: 20px;
+  padding: 0px;
+  text-align: center;
+}
+.toolbox .value {
+  height: 36px;
+  left: 36px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.toolbox i {
+  bottom: 2px;
+  color: #fbb;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  right: 2px;
+}
+.toolbox input {
+  border: 0;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 0px 4px;
+  width: 100%;
+}
+.toolbox p {
+  font-size: 16px;
+  margin: 7px;
+  text-align: center;
+}

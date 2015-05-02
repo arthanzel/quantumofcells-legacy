@@ -49,14 +49,23 @@
             { symbol: "b", value: 0.063  }, // Recovery rate
             { symbol: "c", value: 0      }  // Loss of immunity rate
         ];
+
         $scope.time = 200;
         $scope.resolution = 250;
+        
         $scope.addEquation = function() {
             $scope.equations.push({ variable: "", expression: "" });
+        };
+        $scope.deleteEquation = function(i) {
+            $scope.equations.splice(i, 1);
+        };
+        $scope.deleteParameter = function(i) {
+            $scope.parameters.splice(i, 1);
         };
         $scope.addParameter = function() {
             $scope.parameters.push({ symbol: "", value: "" });
         };
+
         $scope.simulate = function() {
             var paramMap = {};
             for (p in $scope.parameters) {
@@ -72,7 +81,7 @@
                 $scope.resolution);
             console.log(result);
             $scope.data = QOCTools.dataToHighCharts(result, 500);
-            $(".toolbox").fadeOut(500);
+            //$(".toolbox").fadeOut(500);
         };
     });
 
