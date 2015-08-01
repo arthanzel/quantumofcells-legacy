@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!-- saved from url=(0064)https://docs.angularjs.org/examples/example-example35/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-animate-anchor{position:absolute;}</style>
+  <meta charset="UTF-8">
+  <title>Example - example-example35</title>
+  
+
+  <script src="angular.min(1).js"></script><style type="text/css"></style>
+  <script src="script(1).js"></script>
+  
+
+  
+</head>
+<body ng-app="customTriggerExample" class="ng-scope">
+  <div ng-controller="ExampleController" class="ng-scope">
+  <form class="ng-pristine ng-valid">
+    Name:
+    <input type="text" ng-model="user.name" ng-model-options="{ updateOn: &#39;blur&#39; }" class="ng-pristine ng-untouched ng-valid"><br>
+    Other data:
+    <input type="text" ng-model="user.data" class="ng-pristine ng-untouched ng-valid"><br>
+  </form>
+  <pre class="ng-binding">username = ""</pre>
+  <pre class="ng-binding">userdata = ""</pre>
+</div>
+
+<script id="hiddenlpsubmitdiv" style="display: none;"></script><script>try{for(var lastpass_iter=0; lastpass_iter < document.forms.length; lastpass_iter++){ var lastpass_f = document.forms[lastpass_iter]; if(typeof(lastpass_f.lpsubmitorig2)=="undefined"){ lastpass_f.lpsubmitorig2 = lastpass_f.submit; if (typeof(lastpass_f.lpsubmitorig2)=='object'){ continue;}lastpass_f.submit = function(){ var form=this; var customEvent = document.createEvent("Event"); customEvent.initEvent("lpCustomEvent", true, true); var d = document.getElementById("hiddenlpsubmitdiv"); if (d) {for(var i = 0; i < document.forms.length; i++){ if(document.forms[i]==form){ if (typeof(d.innerText) != 'undefined') { d.innerText=i; } else { d.textContent=i; } } } d.dispatchEvent(customEvent); }form.lpsubmitorig2(); } } }}catch(e){}</script></body></html>

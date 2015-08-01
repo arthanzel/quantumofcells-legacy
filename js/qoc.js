@@ -1,5 +1,9 @@
 (function() {
-    var module = angular.module("quantumofcells", ["qoc-chart", "qoc-solver"]);
+    var module = angular.module("quantumofcells", [
+        "qoc-chart",
+        "qoc-solver",
+        "qoc-chardin"
+    ]);
 
     module.controller("QOCController", function($scope, QOCSolver, QOCTools) {
         // HighCharts options

@@ -13,10 +13,17 @@
     <script src="bower_components/angular/angular.min.js"></script>
     <script src="bower_components/highcharts/highcharts.js"></script>
 
+    <!-- Chardin -->
+    <link rel="stylesheet" href="bower_components/chardin.js/chardinjs.css">
+    <script src="bower_components/chardin.js/chardinjs.min.js"></script>
+
     <!-- Angular dependencies -->
     <script src="js/qoc.js"></script>
     <script src="js/qoc-chart.js"></script>
     <script src="js/qoc-solver.js"></script>
+    <script src="js/qoc-chardin.js"></script>
+    <script src="js/qoc-strings.js"></script>
+    <script src="js/qoc-parser.js"></script>
 </head>
 <body ng-controller="QOCController">
     <div class="wrapper">
@@ -26,7 +33,7 @@
         </div>
 
         <div class="toolbox">
-            <div>
+            <div q-chardin="equations">
                 <h2>Equations</h2>
                 <div class="eqnRow" ng-repeat="eqn in equations">
                     <div class="symbol">
@@ -41,7 +48,7 @@
             <p>
                 <a href="" ng-click="addEquation()">Add an equation</a>
             </p>
-           <div>
+           <div q-chardin="parameters">
                 <h2>Parameters</h2>
 
                 <div class="eqnRow" ng-repeat="param in parameters">
@@ -56,8 +63,8 @@
            </div>
            <p>
                 <a href="" ng-click="addParameter()">Add a parameter</a>
-                </p>
-           <div>
+            </p>
+           <div q-chardin="simulate">
                 <h2>Simulate</h2>
 
                 <div class="eqnRow smaller">
