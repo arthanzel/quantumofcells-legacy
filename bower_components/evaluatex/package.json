@@ -1,0 +1,25 @@
+{
+  "name": "Evaluatex.js",
+  "version": "1.0.0",
+  "description": "Converts Latex to evaluatable Javascript.",
+  "main": "src/Evaluatex.js",
+  "repository": "https://github.com/arthanzel/evaluatex",
+  "scripts": {
+    "compile": "browserify src/Evaluatex.js -o evaluatex.js",
+    "test": "mocha"
+  },
+  "keywords": [
+    "latex",
+    "js",
+    "math",
+    "eval",
+    "evaluate"
+  ],
+  "author": "Martin Hanzel",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.0.0",
+    "mocha": "^2.2.5",
+    "watchify": "^3.3.0"
+  }
+}
