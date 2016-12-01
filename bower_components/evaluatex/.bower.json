@@ -1,0 +1,38 @@
+{
+  "name": "evaluatex",
+  "main": "evaluatex.js",
+  "version": "0.1.0",
+  "homepage": "https://github.com/arthanzel/evaluatex",
+  "authors": [
+    "Martin Hanzel <arthanzel@gmail.com>"
+  ],
+  "description": "Latex and ASCIIMath evaluator for Javascript.",
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "ascii",
+    "asciimath",
+    "math",
+    "latex"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "0.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.1.0",
+    "commit": "1359b544813888b0acee178b99ca03dfcbeff742"
+  },
+  "_source": "git://github.com/arthanzel/evaluatex.git",
+  "_target": "^0.1.0",
+  "_originalSource": "evaluatex",
+  "_direct": true
+}
